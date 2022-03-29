@@ -5,10 +5,20 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public Camera cameraMain;
-    private bool isRightClick;
+    public Transform cameraMainOrigin;
+    public Transform targetTransform;
+    public Transform zoomPoint;
+    public bool isTargetSelected;
+    public bool isCameraZoomed;
+    public bool isRightClick;
     private Vector3 mousePosition;
     private Vector3 mousePositionPrevious;
-    private float speedCameraRotate;
+    private float speedCameraOrbit;
+    private float speedCameraRotate = 20.0f;
+    private float speedCameraZoom = 15f;
+    public float zoomRange = 3.5f;
+    private float distanceZoomPoint;
+    private float distanceOriginPoint;
 
     void Start()
     {
@@ -25,9 +35,62 @@ public class CameraController : MonoBehaviour
             {
                 if (hit.transform.tag == "Car")
                 {
-                    Debug.Log(hit.transform.name);
+                    targetTransform = hit.transform;
+                    zoomPoint = hit.transform.GetComponent<Target>().zoomPoint;
+                    zoomRange = hit.transform.GetComponent<Target>().zoomRange;
+
+                    if (zoomPoint == null)
+                    {
+                        zoomPoint = hit.transform;
+                    }
+
+                    if (!isTargetSelected)
+                    {
+                        isTargetSelected = true;
+                    }
+                    else if (isTargetSelected && hit.transform != targetTransform)
+                    {
+                        isCameraZoomed = false;
+                    }
+                    else if (isTargetSelected && hit.transform == targetTransform)
+                    {
+                        isTargetSelected = false;
+                        isCameraZoomed = false;
+                        targetTransform = null;
+                    }
                 }
             }
+        }
+
+        if (targetTransform != null && !isCameraZoomed) //Zoom camera in on selected part
+        {
+            distanceZoomPoint = Vector3.Distance(cameraMain.transform.position, zoomPoint.position);
+
+            if (distanceZoomPoint > zoomRange)
+            {
+                float step = speedCameraZoom * Time.deltaTime;
+                cameraMain.transform.position = Vector3.MoveTowards(cameraMain.transform.position, zoomPoint.position, step);
+                distanceOriginPoint = Vector3.Distance(cameraMain.transform.position, cameraMainOrigin.position);
+
+                //Code Reference: https://docs.unity3d.com/ScriptReference/Vector3.RotateTowards.html
+                Vector3 targetDirection = targetTransform.position - cameraMain.transform.position;
+                float rotateStep = speedCameraRotate * Time.deltaTime;
+                Vector3 newDirection = Vector3.RotateTowards(cameraMain.transform.forward, targetDirection, rotateStep, 0.0f);
+                cameraMain.transform.rotation = Quaternion.LookRotation(newDirection);
+            }
+            else
+            {
+                isCameraZoomed = true;
+            }
+        }
+        else if (targetTransform == null && distanceOriginPoint > 0.25f) //Move camera back to origin
+        {
+            float step = speedCameraZoom * Time.deltaTime;
+            cameraMain.transform.position = Vector3.MoveTowards(cameraMain.transform.position, cameraMainOrigin.position, step);
+
+            //Code Reference: https://docs.unity3d.com/ScriptReference/Quaternion.RotateTowards.html
+            float rotateStep = speedCameraRotate * 10f * Time.deltaTime;
+            cameraMain.transform.rotation = Quaternion.RotateTowards(cameraMain.transform.rotation, cameraMainOrigin.rotation, rotateStep);
         }
 
         if (Input.GetMouseButtonDown(1))
@@ -39,37 +102,37 @@ public class CameraController : MonoBehaviour
             isRightClick = false;
         }
 
-        if (isRightClick) //Hold right click to rotate camera in the direction of mouse
+        if (isRightClick && !isCameraZoomed) //Hold right click to rotate camera in the direction of mouse
         {
             mousePosition = Input.mousePosition;
 
             if (mousePosition.x > mousePositionPrevious.x)
             {
-                speedCameraRotate = 90.0f;
+                speedCameraOrbit = 90.0f;
             }
             else if (mousePosition.x < mousePositionPrevious.x)
             {
-                speedCameraRotate = -90.0f;
+                speedCameraOrbit = -90.0f;
             }
 
-            transform.RotateAround(transform.position, transform.up, Time.deltaTime * speedCameraRotate);
+            transform.RotateAround(transform.position, transform.up, Time.deltaTime * speedCameraOrbit);
             mousePositionPrevious = mousePosition;
         }
         else //Decelerate camera rotation after releasing right click
         {
-            if (speedCameraRotate > 0f || speedCameraRotate < 0f)
+            if (speedCameraOrbit > 0f || speedCameraOrbit < 0f)
             {
-                if (speedCameraRotate > 0f)
+                if (speedCameraOrbit > 0f)
                 {
-                    speedCameraRotate -= 3.0f;
+                    speedCameraOrbit -= 3.0f;
                 }
-                else if (speedCameraRotate < 0f)
+                else if (speedCameraOrbit < 0f)
                 {
-                    speedCameraRotate += 3.0f;
+                    speedCameraOrbit += 3.0f;
                 }
             }
 
-            transform.RotateAround(transform.position, transform.up, Time.deltaTime * speedCameraRotate);
+            transform.RotateAround(transform.position, transform.up, Time.deltaTime * speedCameraOrbit);
         }
     }
 }
