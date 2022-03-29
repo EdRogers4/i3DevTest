@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    public Camera cameraMain;
     private bool isRightClick;
     private Vector3 mousePosition;
     private Vector3 mousePositionPrevious;
-    public float speedCameraRotate;
+    private float speedCameraRotate;
 
     void Start()
     {
@@ -16,6 +17,19 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetMouseButtonDown(0)) //Left click to select car part - Code Referenced: https://www.youtube.com/watch?v=fw7h3UBgNW4
+        {
+            Ray ray = cameraMain.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out RaycastHit hit))
+            {
+                if (hit.transform.tag == "Car")
+                {
+                    Debug.Log(hit.transform.name);
+                }
+            }
+        }
+
         if (Input.GetMouseButtonDown(1))
         {
             isRightClick = true;
