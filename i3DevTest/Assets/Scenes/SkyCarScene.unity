@@ -346,8 +346,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -428,6 +428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  isSelected: 0
   partID: 9
   colorVariant: 1
   zoomRange: 0.1
@@ -692,6 +693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  isSelected: 0
   partID: 7
   colorVariant: 0
   zoomRange: 0.1
@@ -793,8 +795,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -875,6 +877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  isSelected: 0
   partID: 0
   colorVariant: 0
   zoomRange: 0.1
@@ -913,6 +916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  isSelected: 0
   partID: 10
   colorVariant: 1
   zoomRange: 0.1
@@ -1319,8 +1323,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1499,6 +1503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  isSelected: 0
   partID: 4
   colorVariant: 0
   zoomRange: 0.1
@@ -1590,8 +1595,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1677,6 +1682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  isSelected: 0
   partID: 5
   colorVariant: 0
   zoomRange: 0.1
@@ -1746,6 +1752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  isSelected: 0
   partID: 11
   colorVariant: 1
   zoomRange: 0.1
@@ -1837,8 +1844,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2052,8 +2059,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2342,6 +2349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  isSelected: 0
   partID: 3
   colorVariant: 2
   zoomRange: 0.1
@@ -2942,8 +2950,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3489,6 +3497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  isSelected: 0
   partID: 8
   colorVariant: 1
   zoomRange: 0.1
@@ -3831,8 +3840,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4439,8 +4448,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4732,8 +4741,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4931,6 +4940,20 @@ MonoBehaviour:
   - {fileID: 131973183}
   - {fileID: 414793172}
   - {fileID: 739368432}
+  currentTarget: {fileID: 0}
+  selectIcon:
+  - {fileID: 533580569}
+  - {fileID: 1782674130}
+  - {fileID: 1242783444}
+  - {fileID: 1994323578}
+  - {fileID: 491426176}
+  - {fileID: 203960846}
+  - {fileID: 213236215}
+  - {fileID: 1411133605}
+  - {fileID: 885980969}
+  - {fileID: 813345848}
+  - {fileID: 1792319999}
+  - {fileID: 1138557288}
   namePart:
   - Body
   - Break Lights
@@ -5131,6 +5154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  isSelected: 0
   partID: 6
   colorVariant: 0
   zoomRange: 0.1
@@ -5169,6 +5193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  isSelected: 0
   partID: 2
   colorVariant: 1
   zoomRange: 0.2
@@ -5340,6 +5365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  isSelected: 0
   partID: 1
   colorVariant: 2
   zoomRange: 0.1
@@ -5506,8 +5532,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5891,8 +5917,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

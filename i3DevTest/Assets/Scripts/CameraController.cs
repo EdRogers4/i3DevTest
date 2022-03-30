@@ -32,6 +32,7 @@ public class CameraController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            //Code Reference: https://answers.unity.com/questions/1410936/how-to-prevent-a-ui-element-from-clicking-the-game.html
             if (EventSystem.current.IsPointerOverGameObject())
             {
                 return;
@@ -97,7 +98,16 @@ public class CameraController : MonoBehaviour
                     return;
                 }
 
+                if (scriptUIManager.currentTarget != null)
+                {
+                    scriptUIManager.selectIcon[scriptUIManager.currentTarget.partID].SetActive(false);
+                    scriptUIManager.currentTarget.OnUnselect();
+                }
+
                 targetTransform = hit.transform;
+                scriptUIManager.currentTarget = targetTransform.GetComponent<Target>();
+                scriptUIManager.currentTarget.OnSelect();
+                scriptUIManager.selectIcon[scriptUIManager.currentTarget.partID].SetActive(true);
                 zoomPoint = hit.transform.GetComponent<Target>().zoomPoint;
                 zoomRange = hit.transform.GetComponent<Target>().zoomRange;
                 scriptUIManager.LabelScrollText(hit.transform.GetComponent<Target>().partID);
@@ -178,6 +188,8 @@ public class CameraController : MonoBehaviour
 
     private void UnselectPart()
     {
+        scriptUIManager.selectIcon[scriptUIManager.currentTarget.partID].SetActive(false);
+        scriptUIManager.currentTarget.OnUnselect();
         isTargetSelected = false;
         isCameraZoomedIn = false;
         targetTransform = null;

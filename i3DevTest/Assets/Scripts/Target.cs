@@ -5,6 +5,7 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     public CameraController scriptCameraController;
+    public bool isSelected;
     public int partID;
     public int colorVariant;
     public float zoomRange;
@@ -18,34 +19,55 @@ public class Target : MonoBehaviour
         meshRenderer = gameObject.GetComponent<Renderer>();
     }
 
-    private void OnMouseEnter() //Code Reference: https://www.youtube.com/watch?v=fw7h3UBgNW4
+    public void OnSelect()
     {
-        if (colorVariant == 2)
-        {
-            meshRenderer.material = materialLights;
-        }
+        isSelected = true;
 
-        meshRenderer.material.color = new Color(0.7843f, 1.0f, 0.0f, 1.0f);
-    }
-
-    public void OnMouseExit() //Code Reference: https://www.youtube.com/watch?v=fw7h3UBgNW4
-    {
-        if (colorVariant == 0)
+        if (colorVariant != 2)
         {
-            meshRenderer.material.color = Color.white;
+            meshRenderer.material.color = new Color(0.7843f, 1.0f, 0.0f, 1.0f);
         }
-        else if (colorVariant == 1)
-        {
-            meshRenderer.material.color = new Color(0.4980f, 0.4980f, 0.4980f, 1.0f);
-        }
-        else if (colorVariant == 2)
+        else
         {
             meshRenderer.material = materialLightsGlow;
         }
     }
 
-    public void OnSelect()
+    public void OnUnselect()
     {
+        isSelected = false;
+        OnMouseExit();
+    }
 
+    private void OnMouseEnter() //Code Reference: https://www.youtube.com/watch?v=fw7h3UBgNW4
+    {
+        if (!isSelected)
+        {
+            if (colorVariant == 2)
+            {
+                meshRenderer.material = materialLights;
+            }
+
+            meshRenderer.material.color = new Color(0.0f, 1.0f, 1.0f, 1.0f);
+        }
+    }
+
+    public void OnMouseExit() //Code Reference: https://www.youtube.com/watch?v=fw7h3UBgNW4
+    {
+        if (!isSelected)
+        {
+            if (colorVariant == 0)
+            {
+                meshRenderer.material.color = Color.white;
+            }
+            else if (colorVariant == 1)
+            {
+                meshRenderer.material.color = new Color(0.4980f, 0.4980f, 0.4980f, 1.0f);
+            }
+            else if (colorVariant == 2)
+            {
+                meshRenderer.material = materialLightsGlow;
+            }
+        }
     }
 }

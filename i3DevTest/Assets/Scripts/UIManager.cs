@@ -8,6 +8,8 @@ public class UIManager : MonoBehaviour
     public CameraController scriptCameraController;
     public TextMeshProUGUI textLabel;
     public Target[] scriptTarget;
+    public Target currentTarget;
+    public GameObject[] selectIcon;
     public string[] namePart;
     private Animator animator;
     private bool isLabel;
@@ -33,7 +35,16 @@ public class UIManager : MonoBehaviour
 
     public void ButtonPartSelect(int part)
     {
+        if (currentTarget != null)
+        {
+            currentTarget.OnUnselect();
+            selectIcon[currentTarget.partID].SetActive(false);
+        }
+
+        currentTarget = scriptTarget[part];
         scriptCameraController.targetTransform = scriptTarget[part].transform;
+        scriptTarget[part].OnSelect();
+        selectIcon[currentTarget.partID].SetActive(true);
 
         if (scriptTarget[part].zoomPoint != null)
         {
