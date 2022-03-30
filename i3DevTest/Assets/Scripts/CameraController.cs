@@ -1,15 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CameraController : MonoBehaviour
 {
     public Camera cameraMain;
+    public UIManager scriptUIManager;
     public Transform cameraMainOrigin;
     public Transform targetTransform;
     private Transform zoomPoint;
     public bool isTargetSelected;
-    private bool isCameraZoomed;
+    private bool isCameraZoomedIn;
     private bool isRightClick;
     private Vector3 mousePosition;
     private Vector3 mousePositionPrevious;
@@ -18,7 +20,7 @@ public class CameraController : MonoBehaviour
     private float speedCameraZoom = 15f;
     private float zoomRange = 3.5f;
     private float distanceZoomPoint;
-    private float distanceOriginPoint;
+    public float distanceOriginPoint;
 
     void Start()
     {
@@ -29,10 +31,17 @@ public class CameraController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            SelectPart();
+            if (EventSystem.current.IsPointerOverGameObject())
+            {
+                return;
+            }
+            else
+            {
+                SelectPart();
+            }
         }
 
-        if (targetTransform != null && !isCameraZoomed)
+        if (targetTransform != null && !isCameraZoomedIn)
         {
             ZoomCameraIn();
         }
@@ -50,7 +59,7 @@ public class CameraController : MonoBehaviour
             isRightClick = false;
         }
 
-        if (isRightClick && !isCameraZoomed)
+        if (isRightClick && !isCameraZoomedIn)
         {
             OrbitCamera();
         }
@@ -76,6 +85,7 @@ public class CameraController : MonoBehaviour
                 targetTransform = hit.transform;
                 zoomPoint = hit.transform.GetComponent<Target>().zoomPoint;
                 zoomRange = hit.transform.GetComponent<Target>().zoomRange;
+                scriptUIManager.LabelScrollText(hit.transform.GetComponent<Target>().partID);
                 hit.transform.GetComponent<Target>().OnMouseExit();
 
                 if (zoomPoint == null)
@@ -89,16 +99,12 @@ public class CameraController : MonoBehaviour
                 }
                 else if (isTargetSelected && hit.transform != targetTransform)
                 {
-                    isCameraZoomed = false;
+                    isCameraZoomedIn = false;
                 }
                 else if (isTargetSelected && hit.transform == targetTransform)
                 {
                     UnselectPart();
                 }
-            }
-            else if (isTargetSelected)
-            {
-                UnselectPart();
             }
         }
     }
@@ -122,7 +128,7 @@ public class CameraController : MonoBehaviour
         }
         else
         {
-            isCameraZoomed = true;
+            isCameraZoomedIn = true;
         }
     }
 
@@ -176,7 +182,7 @@ public class CameraController : MonoBehaviour
     private void UnselectPart()
     {
         isTargetSelected = false;
-        isCameraZoomed = false;
+        isCameraZoomedIn = false;
         targetTransform = null;
     }
 }

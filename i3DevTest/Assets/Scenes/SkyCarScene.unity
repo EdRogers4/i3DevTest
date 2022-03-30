@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 49422039}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1566592991}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonPartSelect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &49422039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,6 +428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  partID: 9
   colorVariant: 1
   zoomRange: 0.1
   zoomPoint: {fileID: 703057776}
@@ -679,6 +692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  partID: 7
   colorVariant: 0
   zoomRange: 0.1
   zoomPoint: {fileID: 260798520}
@@ -861,6 +875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  partID: 0
   colorVariant: 0
   zoomRange: 3.5
   zoomPoint: {fileID: 0}
@@ -898,6 +913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  partID: 10
   colorVariant: 1
   zoomRange: 0.1
   zoomPoint: {fileID: 1411223313}
@@ -985,7 +1001,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 461973065}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1566592991}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonPartSelect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &461973065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1471,6 +1499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  partID: 4
   colorVariant: 0
   zoomRange: 0.1
   zoomPoint: {fileID: 1999064874}
@@ -1648,6 +1677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  partID: 5
   colorVariant: 0
   zoomRange: 0.1
   zoomPoint: {fileID: 1104890722}
@@ -1716,6 +1746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  partID: 11
   colorVariant: 1
   zoomRange: 0.1
   zoomPoint: {fileID: 833226023}
@@ -2228,7 +2259,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 887414210}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1566592991}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonPartSelect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &887414210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2299,6 +2342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  partID: 3
   colorVariant: 2
   zoomRange: 0.1
   zoomPoint: {fileID: 1760636944}
@@ -2386,7 +2430,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 970439290}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1566592991}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonPartSelect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 11
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &970439290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2507,7 +2563,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1051352027}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1566592991}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonPartSelect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1051352027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2738,7 +2806,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1147460128}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1566592991}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonPartSelect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1147460128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2958,6 +3038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 1293971112}
+  scriptUIManager: {fileID: 1566592991}
   cameraMainOrigin: {fileID: 1083607412}
   targetTransform: {fileID: 0}
   isTargetSelected: 0
@@ -3043,7 +3124,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1204861959}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1566592991}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonPartSelect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1204861959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3235,7 +3328,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1222427103}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1566592991}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonPartSelect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1222427103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3381,6 +3486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  partID: 8
   colorVariant: 1
   zoomRange: 0.1
   zoomPoint: {fileID: 682336461}
@@ -3537,7 +3643,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 3}
   m_SizeDelta: {x: 275, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1323928660
@@ -3587,13 +3693,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42
-  m_fontSizeBase: 42
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 2
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 1024
   m_textAlignment: 65535
@@ -3854,7 +3960,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1364324994}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1566592991}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonPartSelect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1364324994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4182,7 +4300,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1523921762}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1566592991}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonPartSelect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1523921762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4662,6 +4792,7 @@ GameObject:
   - component: {fileID: 1566592987}
   - component: {fileID: 1566592986}
   - component: {fileID: 1566592990}
+  - component: {fileID: 1566592991}
   m_Layer: 5
   m_Name: SkyCarCanvas
   m_TagString: Untagged
@@ -4770,6 +4901,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1566592991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566592985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b976a5bc0af0d0408a504b895fcea76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptCameraController: {fileID: 1164316824}
+  textLabel: {fileID: 1323928660}
+  namePart:
+  - Body
+  - Break Lights
+  - Components
+  - Head Lights
+  - Left Mud Guard
+  - Right Mud Guard
+  - Left Suspension
+  - Right Suspension
+  - Left Front Wheel
+  - Right Front Wheel
+  - Left Rear Wheel
+  - Right Rear Wheel
 --- !u!4 &1760636944 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5880177682031583047, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
@@ -4957,6 +5115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  partID: 6
   colorVariant: 0
   zoomRange: 0.1
   zoomPoint: {fileID: 1548030357}
@@ -4994,6 +5153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  partID: 2
   colorVariant: 1
   zoomRange: 3.5
   zoomPoint: {fileID: 0}
@@ -5081,7 +5241,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1919892495}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1566592991}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonPartSelect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1919892495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5152,6 +5324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  partID: 1
   colorVariant: 2
   zoomRange: 0.1
   zoomPoint: {fileID: 1211845035}
@@ -5460,7 +5633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5566,7 +5739,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2142492065}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1566592991}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonPartSelect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 9
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2142492065
 MonoBehaviour:
   m_ObjectHideFlags: 0

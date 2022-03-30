@@ -5,6 +5,7 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     public CameraController scriptCameraController;
+    public int partID;
     public int colorVariant;
     public float zoomRange;
     public Transform zoomPoint;
@@ -26,7 +27,7 @@ public class Target : MonoBehaviour
                 meshRenderer.material = materialLights;
             }
 
-            meshRenderer.material.color = Color.green;
+            meshRenderer.material.color = new Color(0.7843f, 1.0f, 0.0f, 1.0f);
         }
     }
 
