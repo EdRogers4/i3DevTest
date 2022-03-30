@@ -430,9 +430,9 @@ MonoBehaviour:
   scriptCameraController: {fileID: 1164316824}
   isSelected: 0
   partID: 9
-  colorVariant: 1
   zoomRange: 0.1
   zoomPoint: {fileID: 703057776}
+  colorVariant: 1
   materialLights: {fileID: 0}
   materialLightsGlow: {fileID: 0}
 --- !u!1 &157797496
@@ -696,9 +696,9 @@ MonoBehaviour:
   scriptCameraController: {fileID: 1164316824}
   isSelected: 0
   partID: 7
-  colorVariant: 0
   zoomRange: 0.1
   zoomPoint: {fileID: 260798520}
+  colorVariant: 0
   materialLights: {fileID: 0}
   materialLightsGlow: {fileID: 0}
 --- !u!4 &227510613 stripped
@@ -880,9 +880,9 @@ MonoBehaviour:
   scriptCameraController: {fileID: 1164316824}
   isSelected: 0
   partID: 0
-  colorVariant: 0
   zoomRange: 0.1
   zoomPoint: {fileID: 5880177683771240281}
+  colorVariant: 0
   materialLights: {fileID: 0}
   materialLightsGlow: {fileID: 0}
 --- !u!1 &414793167 stripped
@@ -919,9 +919,9 @@ MonoBehaviour:
   scriptCameraController: {fileID: 1164316824}
   isSelected: 0
   partID: 10
-  colorVariant: 1
   zoomRange: 0.1
   zoomPoint: {fileID: 1411223313}
+  colorVariant: 1
   materialLights: {fileID: 0}
   materialLightsGlow: {fileID: 0}
 --- !u!1 &461973062
@@ -1581,9 +1581,9 @@ MonoBehaviour:
   scriptCameraController: {fileID: 1164316824}
   isSelected: 0
   partID: 4
-  colorVariant: 0
   zoomRange: 0.1
   zoomPoint: {fileID: 1999064874}
+  colorVariant: 0
   materialLights: {fileID: 0}
   materialLightsGlow: {fileID: 0}
 --- !u!1 &699741129
@@ -1760,9 +1760,9 @@ MonoBehaviour:
   scriptCameraController: {fileID: 1164316824}
   isSelected: 0
   partID: 5
-  colorVariant: 0
   zoomRange: 0.1
   zoomPoint: {fileID: 1104890722}
+  colorVariant: 0
   materialLights: {fileID: 0}
   materialLightsGlow: {fileID: 0}
 --- !u!1 &733843931
@@ -1830,9 +1830,9 @@ MonoBehaviour:
   scriptCameraController: {fileID: 1164316824}
   isSelected: 0
   partID: 11
-  colorVariant: 1
   zoomRange: 0.1
   zoomPoint: {fileID: 833226023}
+  colorVariant: 1
   materialLights: {fileID: 0}
   materialLightsGlow: {fileID: 0}
 --- !u!1 &759499396
@@ -2427,9 +2427,9 @@ MonoBehaviour:
   scriptCameraController: {fileID: 1164316824}
   isSelected: 0
   partID: 3
-  colorVariant: 2
   zoomRange: 0.1
   zoomPoint: {fileID: 1760636944}
+  colorVariant: 2
   materialLights: {fileID: 2100000, guid: bedcbcc4d577778478a5f01fe1415af1, type: 2}
   materialLightsGlow: {fileID: 2100000, guid: 3682f7747d485db4586750a832808b31, type: 2}
 --- !u!1 &970439287
@@ -3121,15 +3121,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d77de1014c71e54fb19744e44aaeffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 1293971112}
   scriptUIManager: {fileID: 1566592991}
   scriptSoundManager: {fileID: 1566592992}
+  cameraMain: {fileID: 1293971112}
   cameraMainOrigin: {fileID: 1083607412}
   targetTransform: {fileID: 0}
   zoomPoint: {fileID: 0}
-  zoomRange: 3.5
   isTargetSelected: 0
-  distanceOriginPoint: 0
+  zoomRange: 3.5
 --- !u!1 &1197407519
 GameObject:
   m_ObjectHideFlags: 0
@@ -3710,9 +3709,9 @@ MonoBehaviour:
   scriptCameraController: {fileID: 1164316824}
   isSelected: 0
   partID: 8
-  colorVariant: 1
   zoomRange: 0.1
   zoomPoint: {fileID: 682336461}
+  colorVariant: 1
   materialLights: {fileID: 0}
   materialLightsGlow: {fileID: 0}
 --- !u!1 &1293971110
@@ -3823,8 +3822,8 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 2
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -5238,20 +5237,6 @@ MonoBehaviour:
   scriptCameraController: {fileID: 1164316824}
   scriptSoundManager: {fileID: 1566592992}
   textLabel: {fileID: 1323928660}
-  scriptTarget:
-  - {fileID: 369079550}
-  - {fileID: 1964208006}
-  - {fileID: 1868690394}
-  - {fileID: 962001020}
-  - {fileID: 685526140}
-  - {fileID: 722417827}
-  - {fileID: 1819850711}
-  - {fileID: 219584846}
-  - {fileID: 1282748807}
-  - {fileID: 131973183}
-  - {fileID: 414793172}
-  - {fileID: 739368432}
-  currentTarget: {fileID: 0}
   selectIcon:
   - {fileID: 533580569}
   - {fileID: 1782674130}
@@ -5278,6 +5263,20 @@ MonoBehaviour:
   - Right Front Wheel
   - Left Rear Wheel
   - Right Rear Wheel
+  scriptTarget:
+  - {fileID: 369079550}
+  - {fileID: 1964208006}
+  - {fileID: 1868690394}
+  - {fileID: 962001020}
+  - {fileID: 685526140}
+  - {fileID: 722417827}
+  - {fileID: 1819850711}
+  - {fileID: 219584846}
+  - {fileID: 1282748807}
+  - {fileID: 131973183}
+  - {fileID: 414793172}
+  - {fileID: 739368432}
+  currentTarget: {fileID: 0}
 --- !u!114 &1566592992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5294,7 +5293,6 @@ MonoBehaviour:
   soundButton:
   - {fileID: 8300000, guid: e816642d32e294046b522287de7f1608, type: 3}
   - {fileID: 8300000, guid: 313cb0d6cac193b46b09dc2844120a4e, type: 3}
-  soundHighlight: {fileID: 8300000, guid: 6edf527e3775130499ec589e17fd412b, type: 3}
   soundLabelOff: {fileID: 8300000, guid: dee6a397c131a0e4f8f4d67c940f4466, type: 3}
   soundLabelOn: {fileID: 8300000, guid: 6ff19d9139db8dd4f9332ab186629e3a, type: 3}
   soundOrbitView: {fileID: 8300000, guid: 87b4c22f223e12640bdf3ea0571f07a0, type: 3}
@@ -5384,6 +5382,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5880177682031583047, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
   m_PrefabInstance: {fileID: 5880177683771240279}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1779002193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1779002195}
+  - component: {fileID: 1779002194}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1779002194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779002193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 527dd34673ed83c429cca7335a6d1d54, type: 2}
+--- !u!4 &1779002195
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779002193}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1782674130
 GameObject:
   m_ObjectHideFlags: 0
@@ -5568,9 +5614,9 @@ MonoBehaviour:
   scriptCameraController: {fileID: 1164316824}
   isSelected: 0
   partID: 6
-  colorVariant: 0
   zoomRange: 0.1
   zoomPoint: {fileID: 1548030357}
+  colorVariant: 0
   materialLights: {fileID: 0}
   materialLightsGlow: {fileID: 0}
 --- !u!1 &1868690389 stripped
@@ -5607,9 +5653,9 @@ MonoBehaviour:
   scriptCameraController: {fileID: 1164316824}
   isSelected: 0
   partID: 2
-  colorVariant: 1
   zoomRange: 0.2
   zoomPoint: {fileID: 5880177683771240280}
+  colorVariant: 1
   materialLights: {fileID: 0}
   materialLightsGlow: {fileID: 0}
 --- !u!1 &1919892492
@@ -5779,9 +5825,9 @@ MonoBehaviour:
   scriptCameraController: {fileID: 1164316824}
   isSelected: 0
   partID: 1
-  colorVariant: 2
   zoomRange: 0.1
   zoomPoint: {fileID: 1211845035}
+  colorVariant: 2
   materialLights: {fileID: 2100000, guid: bedcbcc4d577778478a5f01fe1415af1, type: 2}
   materialLightsGlow: {fileID: 2100000, guid: 3682f7747d485db4586750a832808b31, type: 2}
 --- !u!1 &1994323578

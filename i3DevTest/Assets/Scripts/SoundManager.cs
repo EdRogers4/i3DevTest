@@ -12,7 +12,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip soundOrbitView;
     public AudioClip[] soundSelect;
 
-    [Header("Audio Variables")]
+    [Header("Volume")]
     public float volumeSFX;
 
     public void PlaySoundButton()
