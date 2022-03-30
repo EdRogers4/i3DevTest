@@ -877,8 +877,8 @@ MonoBehaviour:
   scriptCameraController: {fileID: 1164316824}
   partID: 0
   colorVariant: 0
-  zoomRange: 3.5
-  zoomPoint: {fileID: 0}
+  zoomRange: 0.1
+  zoomPoint: {fileID: 5880177683771240281}
   materialLights: {fileID: 0}
   materialLightsGlow: {fileID: 0}
 --- !u!1 &414793167 stripped
@@ -3041,7 +3041,10 @@ MonoBehaviour:
   scriptUIManager: {fileID: 1566592991}
   cameraMainOrigin: {fileID: 1083607412}
   targetTransform: {fileID: 0}
+  zoomPoint: {fileID: 0}
+  zoomRange: 3.5
   isTargetSelected: 0
+  distanceOriginPoint: 0
 --- !u!1 &1204861956
 GameObject:
   m_ObjectHideFlags: 0
@@ -3676,7 +3679,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278224383
-  m_fontColor: {r: 1, g: 0.52156866, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 0, b: 0.39215687, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4915,6 +4918,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
   textLabel: {fileID: 1323928660}
+  scriptTarget:
+  - {fileID: 369079550}
+  - {fileID: 1964208006}
+  - {fileID: 1868690394}
+  - {fileID: 962001020}
+  - {fileID: 685526140}
+  - {fileID: 722417827}
+  - {fileID: 1819850711}
+  - {fileID: 219584846}
+  - {fileID: 1282748807}
+  - {fileID: 131973183}
+  - {fileID: 414793172}
+  - {fileID: 739368432}
   namePart:
   - Body
   - Break Lights
@@ -5155,8 +5171,8 @@ MonoBehaviour:
   scriptCameraController: {fileID: 1164316824}
   partID: 2
   colorVariant: 1
-  zoomRange: 3.5
-  zoomPoint: {fileID: 0}
+  zoomRange: 0.2
+  zoomPoint: {fileID: 5880177683771240280}
   materialLights: {fileID: 0}
   materialLightsGlow: {fileID: 0}
 --- !u!1 &1919892492
@@ -5982,3 +5998,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+--- !u!4 &5880177683771240280 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 928078197292290931, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+  m_PrefabInstance: {fileID: 5880177683771240279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5880177683771240281 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8776198812683916681, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+  m_PrefabInstance: {fileID: 5880177683771240279}
+  m_PrefabAsset: {fileID: 0}

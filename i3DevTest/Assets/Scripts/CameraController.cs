@@ -9,7 +9,8 @@ public class CameraController : MonoBehaviour
     public UIManager scriptUIManager;
     public Transform cameraMainOrigin;
     public Transform targetTransform;
-    private Transform zoomPoint;
+    public Transform zoomPoint;
+    public float zoomRange = 3.5f;
     public bool isTargetSelected;
     private bool isCameraZoomedIn;
     private bool isRightClick;
@@ -17,8 +18,8 @@ public class CameraController : MonoBehaviour
     private Vector3 mousePositionPrevious;
     private float speedCameraOrbit;
     private float speedCameraRotate = 20.0f;
-    private float speedCameraZoom = 15f;
-    private float zoomRange = 3.5f;
+    private float speedCameraZoomIn = 7.5f;
+    private float speedCameraZoomOut = 20.0f;
     private float distanceZoomPoint;
     public float distanceOriginPoint;
 
@@ -82,17 +83,6 @@ public class CameraController : MonoBehaviour
         {
             if (hit.transform.tag == "Car")
             {
-                targetTransform = hit.transform;
-                zoomPoint = hit.transform.GetComponent<Target>().zoomPoint;
-                zoomRange = hit.transform.GetComponent<Target>().zoomRange;
-                scriptUIManager.LabelScrollText(hit.transform.GetComponent<Target>().partID);
-                hit.transform.GetComponent<Target>().OnMouseExit();
-
-                if (zoomPoint == null)
-                {
-                    zoomPoint = hit.transform;
-                }
-
                 if (!isTargetSelected)
                 {
                     isTargetSelected = true;
@@ -104,19 +94,26 @@ public class CameraController : MonoBehaviour
                 else if (isTargetSelected && hit.transform == targetTransform)
                 {
                     UnselectPart();
+                    return;
                 }
+
+                targetTransform = hit.transform;
+                zoomPoint = hit.transform.GetComponent<Target>().zoomPoint;
+                zoomRange = hit.transform.GetComponent<Target>().zoomRange;
+                scriptUIManager.LabelScrollText(hit.transform.GetComponent<Target>().partID);
+                hit.transform.GetComponent<Target>().OnMouseExit();
             }
         }
     }
 
-    private void ZoomCameraIn()
+    public void ZoomCameraIn()
     {
         //Zoom camera in on selected part
         distanceZoomPoint = Vector3.Distance(cameraMain.transform.position, zoomPoint.position);
 
         if (distanceZoomPoint > zoomRange)
         {
-            float step = speedCameraZoom * Time.deltaTime;
+            float step = speedCameraZoomIn * Time.deltaTime;
             cameraMain.transform.position = Vector3.MoveTowards(cameraMain.transform.position, zoomPoint.position, step);
             distanceOriginPoint = Vector3.Distance(cameraMain.transform.position, cameraMainOrigin.position);
 
@@ -135,7 +132,7 @@ public class CameraController : MonoBehaviour
     private void ZoomCameraOut()
     {
         //Move camera back to origin
-        float step = speedCameraZoom * Time.deltaTime;
+        float step = speedCameraZoomOut * Time.deltaTime;
         cameraMain.transform.position = Vector3.MoveTowards(cameraMain.transform.position, cameraMainOrigin.position, step);
 
         //Code Reference: https://docs.unity3d.com/ScriptReference/Quaternion.RotateTowards.html
@@ -184,5 +181,13 @@ public class CameraController : MonoBehaviour
         isTargetSelected = false;
         isCameraZoomedIn = false;
         targetTransform = null;
+    }
+
+    public void PositionCamera()
+    {
+        cameraMain.transform.position = zoomPoint.position;
+        cameraMain.transform.rotation = zoomPoint.rotation;
+        isTargetSelected = true;
+        isCameraZoomedIn = true;
     }
 }

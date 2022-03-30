@@ -20,15 +20,12 @@ public class Target : MonoBehaviour
 
     private void OnMouseEnter() //Code Reference: https://www.youtube.com/watch?v=fw7h3UBgNW4
     {
-        if (!scriptCameraController.isTargetSelected)
+        if (colorVariant == 2)
         {
-            if (colorVariant == 2)
-            {
-                meshRenderer.material = materialLights;
-            }
-
-            meshRenderer.material.color = new Color(0.7843f, 1.0f, 0.0f, 1.0f);
+            meshRenderer.material = materialLights;
         }
+
+        meshRenderer.material.color = new Color(0.7843f, 1.0f, 0.0f, 1.0f);
     }
 
     public void OnMouseExit() //Code Reference: https://www.youtube.com/watch?v=fw7h3UBgNW4
