@@ -115,7 +115,7 @@ public class CameraController : MonoBehaviour
                 scriptUIManager.selectIcon[scriptUIManager.currentTarget.partID].SetActive(true);
                 zoomPoint = hit.transform.GetComponent<Target>().zoomPoint;
                 zoomRange = hit.transform.GetComponent<Target>().zoomRange;
-                scriptUIManager.LabelScrollText(hit.transform.GetComponent<Target>().partID);
+                StartCoroutine(scriptUIManager.AnimateText(hit.transform.GetComponent<Target>().partID));
                 hit.transform.GetComponent<Target>().OnMouseExit();
             }
         }
@@ -204,6 +204,7 @@ public class CameraController : MonoBehaviour
     {
         cameraMain.transform.position = zoomPoint.position;
         cameraMain.transform.rotation = zoomPoint.rotation;
+        distanceOriginPoint = Vector3.Distance(cameraMain.transform.position, cameraMainOrigin.position);
         isTargetSelected = true;
         isCameraZoomedIn = true;
     }

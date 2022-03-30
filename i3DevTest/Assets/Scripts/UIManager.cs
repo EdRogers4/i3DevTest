@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
     public Target currentTarget;
     public GameObject[] selectIcon;
     public string[] namePart;
+    private float textSpeed = 0.025f;
     private Animator animator;
     private bool isLabel;
 
@@ -56,11 +57,18 @@ public class UIManager : MonoBehaviour
         }
 
         scriptCameraController.PositionCamera();
-        LabelScrollText(part); 
+        StartCoroutine(AnimateText(part)); 
     }
 
-    public void LabelScrollText(int part)
+    public IEnumerator AnimateText(int part) //Code Reference: https://www.youtube.com/watch?v=Z8efnBeXHeQ
     {
-        textLabel.text = namePart[part];
+        textLabel.text = "";
+        yield return new WaitForSeconds(0.4f);
+
+        for (int i = 0; i < namePart[part].Length + 1; i++)
+        {
+            textLabel.text = namePart[part].Substring(0, i);
+            yield return new WaitForSeconds(textSpeed);
+        }
     }
 }
