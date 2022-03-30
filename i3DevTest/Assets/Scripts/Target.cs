@@ -17,7 +17,7 @@ public class Target : MonoBehaviour
         meshRenderer = gameObject.GetComponent<Renderer>();
     }
 
-    private void OnMouseEnter() //Coder Reference: https://www.youtube.com/watch?v=fw7h3UBgNW4
+    private void OnMouseEnter() //Code Reference: https://www.youtube.com/watch?v=fw7h3UBgNW4
     {
         if (!scriptCameraController.isTargetSelected)
         {
@@ -30,7 +30,7 @@ public class Target : MonoBehaviour
         }
     }
 
-    public void OnMouseExit() //Coder Reference: https://www.youtube.com/watch?v=fw7h3UBgNW4
+    public void OnMouseExit() //Code Reference: https://www.youtube.com/watch?v=fw7h3UBgNW4
     {
         if (colorVariant == 0)
         {
