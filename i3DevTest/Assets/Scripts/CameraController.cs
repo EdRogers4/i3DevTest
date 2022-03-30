@@ -82,7 +82,12 @@ public class CameraController : MonoBehaviour
 
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
-            if (hit.transform.tag == "Car")
+            if (hit.transform.tag == "Ground" && isTargetSelected)
+            {
+                UnselectPart();
+                return;
+            }
+            else if (hit.transform.tag == "Car")
             {
                 if (!isTargetSelected)
                 {
