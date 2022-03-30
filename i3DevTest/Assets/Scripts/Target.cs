@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
+    [Header("Scripts")]
     public CameraController scriptCameraController;
+
+    [Header("Part Data")]
     public bool isSelected;
     public int partID;
-    public int colorVariant;
+
+    [Header("Camera Data")]
     public float zoomRange;
     public Transform zoomPoint;
+
+    [Header("Renderer")]
+    public int colorVariant;
     public Material materialLights;
     public Material materialLightsGlow;
     private Renderer meshRenderer;

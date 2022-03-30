@@ -3123,6 +3123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 1293971112}
   scriptUIManager: {fileID: 1566592991}
+  scriptSoundManager: {fileID: 1566592992}
   cameraMainOrigin: {fileID: 1083607412}
   targetTransform: {fileID: 0}
   zoomPoint: {fileID: 0}
@@ -3725,6 +3726,7 @@ GameObject:
   - component: {fileID: 1293971113}
   - component: {fileID: 1293971112}
   - component: {fileID: 1293971111}
+  - component: {fileID: 1293971115}
   - component: {fileID: 1293971114}
   m_Layer: 0
   m_Name: MainCamera
@@ -3831,6 +3833,102 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!82 &1293971115
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293971110}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1323928658
 GameObject:
   m_ObjectHideFlags: 0
@@ -5015,6 +5113,7 @@ GameObject:
   - component: {fileID: 1566592986}
   - component: {fileID: 1566592990}
   - component: {fileID: 1566592991}
+  - component: {fileID: 1566592992}
   m_Layer: 5
   m_Name: SkyCarCanvas
   m_TagString: Untagged
@@ -5137,6 +5236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  scriptSoundManager: {fileID: 1566592992}
   textLabel: {fileID: 1323928660}
   scriptTarget:
   - {fileID: 369079550}
@@ -5178,6 +5278,31 @@ MonoBehaviour:
   - Right Front Wheel
   - Left Rear Wheel
   - Right Rear Wheel
+--- !u!114 &1566592992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566592985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df4afd6e212ecac499a51550381beb97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1293971115}
+  soundButton:
+  - {fileID: 8300000, guid: e816642d32e294046b522287de7f1608, type: 3}
+  - {fileID: 8300000, guid: 313cb0d6cac193b46b09dc2844120a4e, type: 3}
+  soundHighlight: {fileID: 8300000, guid: 6edf527e3775130499ec589e17fd412b, type: 3}
+  soundLabelOff: {fileID: 8300000, guid: dee6a397c131a0e4f8f4d67c940f4466, type: 3}
+  soundLabelOn: {fileID: 8300000, guid: 6ff19d9139db8dd4f9332ab186629e3a, type: 3}
+  soundOrbitView: {fileID: 8300000, guid: 87b4c22f223e12640bdf3ea0571f07a0, type: 3}
+  soundSelect:
+  - {fileID: 8300000, guid: 6f751a186cc382247a8c6cd2e186028f, type: 3}
+  - {fileID: 8300000, guid: f9d62b4e6d5e2eb428414ca7b14d3aa5, type: 3}
+  - {fileID: 8300000, guid: 64f859faebc9a9847aedfd17ef93720f, type: 3}
+  volumeSFX: 1
 --- !u!1 &1756090737
 GameObject:
   m_ObjectHideFlags: 0

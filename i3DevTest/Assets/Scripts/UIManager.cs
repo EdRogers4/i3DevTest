@@ -5,15 +5,21 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
+    [Header("Scripts")]
     public CameraController scriptCameraController;
+    public SoundManager scriptSoundManager;
+
+    [Header("Text")]
     public TextMeshProUGUI textLabel;
-    public Target[] scriptTarget;
-    public Target currentTarget;
     public GameObject[] selectIcon;
     public string[] namePart;
     private float textSpeed = 0.025f;
     private Animator animator;
     private bool isLabel;
+
+    [Header("Targets")]
+    public Target[] scriptTarget;
+    public Target currentTarget;
 
     void Start()
     {
@@ -42,6 +48,7 @@ public class UIManager : MonoBehaviour
             selectIcon[currentTarget.partID].SetActive(false);
         }
 
+        scriptSoundManager.PlaySoundButton();
         currentTarget = scriptTarget[part];
         scriptCameraController.targetTransform = scriptTarget[part].transform;
         scriptTarget[part].OnSelect();
@@ -63,7 +70,7 @@ public class UIManager : MonoBehaviour
     public IEnumerator AnimateText(int part) //Code Reference: https://www.youtube.com/watch?v=Z8efnBeXHeQ
     {
         textLabel.text = "";
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.3f);
 
         for (int i = 0; i < namePart[part].Length + 1; i++)
         {

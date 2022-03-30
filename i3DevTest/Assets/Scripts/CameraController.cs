@@ -5,23 +5,35 @@ using UnityEngine.EventSystems;
 
 public class CameraController : MonoBehaviour
 {
-    public Camera cameraMain;
+    [Header("Scripts")]
     public UIManager scriptUIManager;
+    public SoundManager scriptSoundManager;
+
+    [Header("Cameras")]
+    public Camera cameraMain;
+
+    [Header("Mouse")]
+    private Vector3 mousePosition;
+    private Vector3 mousePositionPrevious;
+
+    [Header("Transforms")]
     public Transform cameraMainOrigin;
     public Transform targetTransform;
     public Transform zoomPoint;
-    public float zoomRange = 3.5f;
+
+    [Header("Bools")]
     public bool isTargetSelected;
     private bool isCameraZoomedIn;
     private bool isRightClick;
-    private Vector3 mousePosition;
-    private Vector3 mousePositionPrevious;
+
+    [Header("Floats")]
+    public float zoomRange = 3.5f;
     private float speedCameraOrbit;
     private float speedCameraRotate = 20.0f;
     private float speedCameraZoomIn = 7.5f;
     private float speedCameraZoomOut = 20.0f;
     private float distanceZoomPoint;
-    public float distanceOriginPoint;
+    private float distanceOriginPoint;
 
     void Start()
     {
@@ -112,6 +124,7 @@ public class CameraController : MonoBehaviour
                 targetTransform = hit.transform;
                 scriptUIManager.currentTarget = targetTransform.GetComponent<Target>();
                 scriptUIManager.currentTarget.OnSelect();
+                scriptSoundManager.PlaySoundSelect();
                 scriptUIManager.selectIcon[scriptUIManager.currentTarget.partID].SetActive(true);
                 zoomPoint = hit.transform.GetComponent<Target>().zoomPoint;
                 zoomRange = hit.transform.GetComponent<Target>().zoomRange;
