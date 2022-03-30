@@ -25,7 +25,7 @@ public class Target : MonoBehaviour
 
         if (colorVariant != 2)
         {
-            meshRenderer.material.color = new Color(0.7843f, 1.0f, 0.0f, 1.0f);
+            meshRenderer.material.color = new Color(0.0f, 1.0f, 1.0f, 1.0f);
         }
         else
         {
@@ -48,7 +48,7 @@ public class Target : MonoBehaviour
                 meshRenderer.material = materialLights;
             }
 
-            meshRenderer.material.color = new Color(0.0f, 1.0f, 1.0f, 1.0f);
+            meshRenderer.material.color = new Color(0.0f, 0.25f, 0.35f, 1.0f);
         }
     }
 
