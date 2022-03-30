@@ -401,6 +401,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100056, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
   m_PrefabInstance: {fileID: 1557444129}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &131973179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131973178}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.5123153, b: 0, a: 1}
+  outlineWidth: 6
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!64 &131973182
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -428,6 +446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  scriptOutline: {fileID: 131973179}
   isSelected: 0
   partID: 9
   zoomRange: 0.1
@@ -667,6 +686,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100050, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
   m_PrefabInstance: {fileID: 1557444129}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &219584842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219584841}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.5123153, b: 0, a: 1}
+  outlineWidth: 6
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!64 &219584845
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -694,6 +731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  scriptOutline: {fileID: 219584842}
   isSelected: 0
   partID: 7
   zoomRange: 0.1
@@ -878,6 +916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  scriptOutline: {fileID: 369079551}
   isSelected: 0
   partID: 0
   zoomRange: 0.1
@@ -885,11 +924,47 @@ MonoBehaviour:
   colorVariant: 0
   materialLights: {fileID: 0}
   materialLightsGlow: {fileID: 0}
+--- !u!114 &369079551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369079545}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.5123153, b: 0, a: 1}
+  outlineWidth: 6
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &414793167 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100058, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
   m_PrefabInstance: {fileID: 1557444129}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &414793168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414793167}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.5123153, b: 0, a: 1}
+  outlineWidth: 6
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!64 &414793171
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -917,6 +992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  scriptOutline: {fileID: 414793168}
   isSelected: 0
   partID: 10
   zoomRange: 0.1
@@ -1552,6 +1628,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100044, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
   m_PrefabInstance: {fileID: 1557444129}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &685526136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685526135}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.5123153, b: 0, a: 1}
+  outlineWidth: 6
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!64 &685526139
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1579,6 +1673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  scriptOutline: {fileID: 685526136}
   isSelected: 0
   partID: 4
   zoomRange: 0.1
@@ -1731,6 +1826,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100046, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
   m_PrefabInstance: {fileID: 1557444129}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &722417823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722417822}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.5123153, b: 0, a: 1}
+  outlineWidth: 6
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!64 &722417826
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1758,6 +1871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  scriptOutline: {fileID: 722417823}
   isSelected: 0
   partID: 5
   zoomRange: 0.1
@@ -1801,6 +1915,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100060, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
   m_PrefabInstance: {fileID: 1557444129}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &739368428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739368427}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.5123153, b: 0, a: 1}
+  outlineWidth: 6
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!64 &739368431
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1828,6 +1960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  scriptOutline: {fileID: 739368428}
   isSelected: 0
   partID: 11
   zoomRange: 0.1
@@ -2398,6 +2531,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100042, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
   m_PrefabInstance: {fileID: 1557444129}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &962001016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962001015}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.5123153, b: 0, a: 1}
+  outlineWidth: 6
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!64 &962001019
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2425,6 +2576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  scriptOutline: {fileID: 962001016}
   isSelected: 0
   partID: 3
   zoomRange: 0.1
@@ -3680,6 +3832,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100054, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
   m_PrefabInstance: {fileID: 1557444129}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1282748803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282748802}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.5123153, b: 0, a: 1}
+  outlineWidth: 6
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!64 &1282748806
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3707,6 +3877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  scriptOutline: {fileID: 1282748803}
   isSelected: 0
   partID: 8
   zoomRange: 0.1
@@ -5585,6 +5756,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100048, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
   m_PrefabInstance: {fileID: 1557444129}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1819850707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819850706}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.5123153, b: 0, a: 1}
+  outlineWidth: 6
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!64 &1819850710
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5612,6 +5801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  scriptOutline: {fileID: 1819850707}
   isSelected: 0
   partID: 6
   zoomRange: 0.1
@@ -5624,6 +5814,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100070, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
   m_PrefabInstance: {fileID: 1557444129}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1868690390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868690389}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.5123153, b: 0, a: 1}
+  outlineWidth: 6
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!64 &1868690393
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5651,6 +5859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  scriptOutline: {fileID: 1868690390}
   isSelected: 0
   partID: 2
   zoomRange: 0.2
@@ -5796,6 +6005,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100040, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
   m_PrefabInstance: {fileID: 1557444129}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1964208002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964208001}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.5123153, b: 0, a: 1}
+  outlineWidth: 6
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!64 &1964208005
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5823,6 +6050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptCameraController: {fileID: 1164316824}
+  scriptOutline: {fileID: 1964208002}
   isSelected: 0
   partID: 1
   zoomRange: 0.1

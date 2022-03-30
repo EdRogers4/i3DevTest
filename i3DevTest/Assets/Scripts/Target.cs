@@ -6,6 +6,7 @@ public class Target : MonoBehaviour
 {
     [Header("Scripts")]
     public CameraController scriptCameraController;
+    public Outline scriptOutline; //Asset Provided By: https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488
 
     [Header("Part Data")]
     public bool isSelected;
@@ -48,19 +49,13 @@ public class Target : MonoBehaviour
 
     private void OnMouseEnter() //Code Reference: https://www.youtube.com/watch?v=fw7h3UBgNW4
     {
-        if (!isSelected)
-        {
-            if (colorVariant == 2)
-            {
-                meshRenderer.material = materialLights;
-            }
-
-            meshRenderer.material.color = new Color(0.0f, 0.25f, 0.35f, 1.0f);
-        }
+        scriptOutline.enabled = true;
     }
 
     public void OnMouseExit() //Code Reference: https://www.youtube.com/watch?v=fw7h3UBgNW4
     {
+        scriptOutline.enabled = false;
+
         if (!isSelected)
         {
             if (colorVariant == 0)
