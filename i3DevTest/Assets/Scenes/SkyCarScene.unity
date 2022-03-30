@@ -162,6 +162,8 @@ MonoBehaviour:
   colorVariant: 1
   zoomRange: 0.1
   zoomPoint: {fileID: 703057776}
+  materialLights: {fileID: 0}
+  materialLightsGlow: {fileID: 0}
 --- !u!1 &219584841 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100050, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
@@ -195,7 +197,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorVariant: 0
   zoomRange: 0.1
-  zoomPoint: {fileID: 1548030357}
+  zoomPoint: {fileID: 260798520}
+  materialLights: {fileID: 0}
+  materialLightsGlow: {fileID: 0}
 --- !u!1 &227510612
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,8 +231,8 @@ Transform:
   - {fileID: 1760636944}
   - {fileID: 1999064874}
   - {fileID: 1104890722}
-  - {fileID: 260798520}
   - {fileID: 1548030357}
+  - {fileID: 260798520}
   - {fileID: 682336461}
   - {fileID: 703057776}
   - {fileID: 1411223313}
@@ -246,7 +250,7 @@ GameObject:
   m_Component:
   - component: {fileID: 260798520}
   m_Layer: 0
-  m_Name: ZoomPointSuspensionLeft
+  m_Name: ZoomPointSuspensionRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -264,7 +268,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 227510613}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 65, y: -90, z: 0}
 --- !u!1 &369079545 stripped
 GameObject:
@@ -298,8 +302,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorVariant: 0
-  zoomRange: 3
+  zoomRange: 3.5
   zoomPoint: {fileID: 0}
+  materialLights: {fileID: 0}
+  materialLightsGlow: {fileID: 0}
 --- !u!1 &414793167 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100058, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
@@ -334,6 +340,8 @@ MonoBehaviour:
   colorVariant: 1
   zoomRange: 0.1
   zoomPoint: {fileID: 1411223313}
+  materialLights: {fileID: 0}
+  materialLightsGlow: {fileID: 0}
 --- !u!1 &511178309
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,6 +531,8 @@ MonoBehaviour:
   colorVariant: 0
   zoomRange: 0.1
   zoomPoint: {fileID: 1999064874}
+  materialLights: {fileID: 0}
+  materialLightsGlow: {fileID: 0}
 --- !u!1 &703057775
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,6 +597,8 @@ MonoBehaviour:
   colorVariant: 0
   zoomRange: 0.1
   zoomPoint: {fileID: 1104890722}
+  materialLights: {fileID: 0}
+  materialLightsGlow: {fileID: 0}
 --- !u!1 &733843931
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,6 +664,8 @@ MonoBehaviour:
   colorVariant: 1
   zoomRange: 0.1
   zoomPoint: {fileID: 833226023}
+  materialLights: {fileID: 0}
+  materialLightsGlow: {fileID: 0}
 --- !u!1 &833226022
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,9 +727,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a83a0ae9105ec6429dec2c4cedc2eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorVariant: 0
+  colorVariant: 2
   zoomRange: 0.1
   zoomPoint: {fileID: 1760636944}
+  materialLights: {fileID: 2100000, guid: bedcbcc4d577778478a5f01fe1415af1, type: 2}
+  materialLightsGlow: {fileID: 2100000, guid: 3682f7747d485db4586750a832808b31, type: 2}
 --- !u!1 &1083607411
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +909,8 @@ MonoBehaviour:
   colorVariant: 1
   zoomRange: 0.1
   zoomPoint: {fileID: 682336461}
+  materialLights: {fileID: 0}
+  materialLightsGlow: {fileID: 0}
 --- !u!1 &1293971110
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,7 +1195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1548030357}
   m_Layer: 0
-  m_Name: ZoomPointSuspensionRight
+  m_Name: ZoomPointSuspensionLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1195,7 +1213,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 227510613}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 65, y: 90, z: 0}
 --- !u!1001 &1557444129
 PrefabInstance:
@@ -1413,7 +1431,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorVariant: 0
   zoomRange: 0.1
-  zoomPoint: {fileID: 260798520}
+  zoomPoint: {fileID: 1548030357}
+  materialLights: {fileID: 0}
+  materialLightsGlow: {fileID: 0}
 --- !u!1 &1868690389 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100070, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
@@ -1446,8 +1466,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorVariant: 1
-  zoomRange: 3
+  zoomRange: 3.5
   zoomPoint: {fileID: 0}
+  materialLights: {fileID: 0}
+  materialLightsGlow: {fileID: 0}
 --- !u!1 &1964208001 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100040, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
@@ -1479,9 +1501,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a83a0ae9105ec6429dec2c4cedc2eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorVariant: 0
+  colorVariant: 2
   zoomRange: 0.1
   zoomPoint: {fileID: 1211845035}
+  materialLights: {fileID: 2100000, guid: bedcbcc4d577778478a5f01fe1415af1, type: 2}
+  materialLightsGlow: {fileID: 2100000, guid: 3682f7747d485db4586750a832808b31, type: 2}
 --- !u!1 &1999064873
 GameObject:
   m_ObjectHideFlags: 0
