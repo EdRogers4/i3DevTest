@@ -159,6 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a83a0ae9105ec6429dec2c4cedc2eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scriptCameraController: {fileID: 1164316824}
   colorVariant: 1
   zoomRange: 0.1
   zoomPoint: {fileID: 703057776}
@@ -195,81 +196,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a83a0ae9105ec6429dec2c4cedc2eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scriptCameraController: {fileID: 1164316824}
   colorVariant: 0
   zoomRange: 0.1
   zoomPoint: {fileID: 260798520}
   materialLights: {fileID: 0}
   materialLightsGlow: {fileID: 0}
---- !u!1 &227510612
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 227510613}
-  m_Layer: 0
-  m_Name: ZoomPoints
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &227510613
+--- !u!4 &227510613 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5880177683695052290, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+  m_PrefabInstance: {fileID: 5880177683771240279}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227510612}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1211845035}
-  - {fileID: 1760636944}
-  - {fileID: 1999064874}
-  - {fileID: 1104890722}
-  - {fileID: 1548030357}
-  - {fileID: 260798520}
-  - {fileID: 682336461}
-  - {fileID: 703057776}
-  - {fileID: 1411223313}
-  - {fileID: 833226023}
-  m_Father: {fileID: 511178310}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &260798519
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 260798520}
-  m_Layer: 0
-  m_Name: ZoomPointSuspensionRight
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &260798520
+--- !u!4 &260798520 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5880177683728848751, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+  m_PrefabInstance: {fileID: 5880177683771240279}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 260798519}
-  m_LocalRotation: {x: 0.3799282, y: -0.59636784, z: 0.3799282, w: 0.59636784}
-  m_LocalPosition: {x: 1.25, y: 1.5, z: 1.25}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 227510613}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 65, y: -90, z: 0}
 --- !u!1 &369079545 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100068, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
@@ -301,6 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a83a0ae9105ec6429dec2c4cedc2eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scriptCameraController: {fileID: 1164316824}
   colorVariant: 0
   zoomRange: 3.5
   zoomPoint: {fileID: 0}
@@ -337,6 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a83a0ae9105ec6429dec2c4cedc2eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scriptCameraController: {fileID: 1164316824}
   colorVariant: 1
   zoomRange: 0.1
   zoomPoint: {fileID: 1411223313}
@@ -467,36 +411,11 @@ Transform:
   m_Father: {fileID: 1512868733}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &682336460
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 682336461}
-  m_Layer: 0
-  m_Name: ZoomPointWheelFrontLeft
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &682336461
+--- !u!4 &682336461 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5880177683110203290, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+  m_PrefabInstance: {fileID: 5880177683771240279}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 682336460}
-  m_LocalRotation: {x: 0, y: 0, z: -0.08715578, w: 0.9961947}
-  m_LocalPosition: {x: -1.75, y: 0.5, z: 1.25}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 227510613}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -10}
 --- !u!1 &685526135 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100044, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
@@ -528,41 +447,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a83a0ae9105ec6429dec2c4cedc2eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scriptCameraController: {fileID: 1164316824}
   colorVariant: 0
   zoomRange: 0.1
   zoomPoint: {fileID: 1999064874}
   materialLights: {fileID: 0}
   materialLightsGlow: {fileID: 0}
---- !u!1 &703057775
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 703057776}
-  m_Layer: 0
-  m_Name: ZoomPointWheelFrontRight
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &703057776
+--- !u!4 &703057776 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5880177683089514535, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+  m_PrefabInstance: {fileID: 5880177683771240279}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 703057775}
-  m_LocalRotation: {x: 0, y: 0, z: 0.08715578, w: 0.9961947}
-  m_LocalPosition: {x: 1.75, y: 0.5, z: 1.25}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 227510613}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10}
 --- !u!1 &722417822 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100046, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
@@ -594,6 +489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a83a0ae9105ec6429dec2c4cedc2eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scriptCameraController: {fileID: 1164316824}
   colorVariant: 0
   zoomRange: 0.1
   zoomPoint: {fileID: 1104890722}
@@ -661,41 +557,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a83a0ae9105ec6429dec2c4cedc2eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scriptCameraController: {fileID: 1164316824}
   colorVariant: 1
   zoomRange: 0.1
   zoomPoint: {fileID: 833226023}
   materialLights: {fileID: 0}
   materialLightsGlow: {fileID: 0}
---- !u!1 &833226022
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 833226023}
-  m_Layer: 0
-  m_Name: ZoomPointWheelRearRight
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &833226023
+--- !u!4 &833226023 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5880177683496118896, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+  m_PrefabInstance: {fileID: 5880177683771240279}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 833226022}
-  m_LocalRotation: {x: 0, y: 0, z: 0.08715578, w: 0.9961947}
-  m_LocalPosition: {x: 1.75, y: 0.5, z: -1.65}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 227510613}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10}
 --- !u!1 &962001015 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100042, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
@@ -727,6 +599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a83a0ae9105ec6429dec2c4cedc2eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scriptCameraController: {fileID: 1164316824}
   colorVariant: 2
   zoomRange: 0.1
   zoomPoint: {fileID: 1760636944}
@@ -762,36 +635,11 @@ Transform:
   m_Father: {fileID: 1164316823}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1104890721
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1104890722}
-  m_Layer: 0
-  m_Name: ZoomPointMudGuardRight
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1104890722
+--- !u!4 &1104890722 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5880177682683421749, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+  m_PrefabInstance: {fileID: 5880177683771240279}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104890721}
-  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 1.5, y: 1, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 227510613}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!1 &1164316822
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,41 +688,12 @@ MonoBehaviour:
   cameraMain: {fileID: 1293971112}
   cameraMainOrigin: {fileID: 1083607412}
   targetTransform: {fileID: 0}
-  zoomPoint: {fileID: 0}
   isTargetSelected: 0
-  isCameraZoomed: 0
-  isRightClick: 0
-  zoomRange: 3.5
---- !u!1 &1211845034
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1211845035}
-  m_Layer: 0
-  m_Name: ZoomPointBrakeLights
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1211845035
+--- !u!4 &1211845035 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5880177682563884796, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+  m_PrefabInstance: {fileID: 5880177683771240279}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1211845034}
-  m_LocalRotation: {x: 0, y: 0.92387956, z: -0.38268343, w: 0}
-  m_LocalPosition: {x: 0, y: 1, z: -3.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 227510613}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 45, y: 180, z: 0}
 --- !u!1 &1282748802 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100054, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
@@ -906,6 +725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a83a0ae9105ec6429dec2c4cedc2eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scriptCameraController: {fileID: 1164316824}
   colorVariant: 1
   zoomRange: 0.1
   zoomPoint: {fileID: 682336461}
@@ -1124,36 +944,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1368413383}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1411223312
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1411223313}
-  m_Layer: 0
-  m_Name: ZoomPointWheelRearLeft
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1411223313
+--- !u!4 &1411223313 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5880177683031171142, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+  m_PrefabInstance: {fileID: 5880177683771240279}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411223312}
-  m_LocalRotation: {x: 0, y: 0, z: -0.08715578, w: 0.9961947}
-  m_LocalPosition: {x: -1.75, y: 0.5, z: -1.65}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 227510613}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -10}
 --- !u!1 &1512868732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,36 +980,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1548030356
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1548030357}
-  m_Layer: 0
-  m_Name: ZoomPointSuspensionLeft
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1548030357
+--- !u!4 &1548030357 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5880177682894307010, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+  m_PrefabInstance: {fileID: 5880177683771240279}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1548030356}
-  m_LocalRotation: {x: 0.3799282, y: 0.59636784, z: -0.3799282, w: 0.59636784}
-  m_LocalPosition: {x: -1.25, y: 1.5, z: 1.25}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 227510613}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 65, y: 90, z: 0}
 --- !u!1001 &1557444129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1368,36 +1138,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3682f7747d485db4586750a832808b31, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
---- !u!1 &1760636943
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1760636944}
-  m_Layer: 0
-  m_Name: ZoomPointHeadLights
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1760636944
+--- !u!4 &1760636944 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5880177682031583047, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+  m_PrefabInstance: {fileID: 5880177683771240279}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1760636943}
-  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 1, z: 2.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 227510613}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!1 &1819850706 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100048, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
@@ -1429,6 +1174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a83a0ae9105ec6429dec2c4cedc2eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scriptCameraController: {fileID: 1164316824}
   colorVariant: 0
   zoomRange: 0.1
   zoomPoint: {fileID: 1548030357}
@@ -1465,6 +1211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a83a0ae9105ec6429dec2c4cedc2eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scriptCameraController: {fileID: 1164316824}
   colorVariant: 1
   zoomRange: 3.5
   zoomPoint: {fileID: 0}
@@ -1501,38 +1248,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a83a0ae9105ec6429dec2c4cedc2eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scriptCameraController: {fileID: 1164316824}
   colorVariant: 2
   zoomRange: 0.1
   zoomPoint: {fileID: 1211845035}
   materialLights: {fileID: 2100000, guid: bedcbcc4d577778478a5f01fe1415af1, type: 2}
   materialLightsGlow: {fileID: 2100000, guid: 3682f7747d485db4586750a832808b31, type: 2}
---- !u!1 &1999064873
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1999064874}
-  m_Layer: 0
-  m_Name: ZoomPointMudGuardLeft
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1999064874
+--- !u!4 &1999064874 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5880177682514862205, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+  m_PrefabInstance: {fileID: 5880177683771240279}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1999064873}
-  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -1.5, y: 1, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 227510613}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!1001 &5880177683771240279
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 511178310}
+    m_Modifications:
+    - target: {fileID: 5880177683695052290, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5880177683695052290, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5880177683695052290, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5880177683695052290, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5880177683695052290, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5880177683695052290, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5880177683695052290, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5880177683695052290, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5880177683695052290, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5880177683695052290, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5880177683695052290, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5880177683695052291, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}
+      propertyPath: m_Name
+      value: ZoomPoints
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 21a8764d9dcb0344a8d096936dc13278, type: 3}

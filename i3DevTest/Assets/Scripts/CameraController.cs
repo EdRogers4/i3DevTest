@@ -8,7 +8,7 @@ public class CameraController : MonoBehaviour
     public Transform cameraMainOrigin;
     public Transform targetTransform;
     private Transform zoomPoint;
-    private bool isTargetSelected;
+    public bool isTargetSelected;
     private bool isCameraZoomed;
     private bool isRightClick;
     private Vector3 mousePosition;
@@ -16,7 +16,7 @@ public class CameraController : MonoBehaviour
     private float speedCameraOrbit;
     private float speedCameraRotate = 20.0f;
     private float speedCameraZoom = 15f;
-    public float zoomRange = 3.5f;
+    private float zoomRange = 3.5f;
     private float distanceZoomPoint;
     private float distanceOriginPoint;
 
@@ -54,7 +54,11 @@ public class CameraController : MonoBehaviour
         {
             OrbitCamera();
         }
-        else 
+        else if (isRightClick && isTargetSelected)
+        {
+            UnselectPart();
+        }
+        else if (speedCameraOrbit > 0f || speedCameraOrbit < 0f)
         {
             DecelerateCamera();
         }
@@ -72,6 +76,7 @@ public class CameraController : MonoBehaviour
                 targetTransform = hit.transform;
                 zoomPoint = hit.transform.GetComponent<Target>().zoomPoint;
                 zoomRange = hit.transform.GetComponent<Target>().zoomRange;
+                hit.transform.GetComponent<Target>().OnMouseExit();
 
                 if (zoomPoint == null)
                 {
@@ -88,10 +93,12 @@ public class CameraController : MonoBehaviour
                 }
                 else if (isTargetSelected && hit.transform == targetTransform)
                 {
-                    isTargetSelected = false;
-                    isCameraZoomed = false;
-                    targetTransform = null;
+                    UnselectPart();
                 }
+            }
+            else if (isTargetSelected)
+            {
+                UnselectPart();
             }
         }
     }
@@ -164,5 +171,12 @@ public class CameraController : MonoBehaviour
         }
 
         transform.RotateAround(transform.position, transform.up, Time.deltaTime * speedCameraOrbit);
+    }
+
+    private void UnselectPart()
+    {
+        isTargetSelected = false;
+        isCameraZoomed = false;
+        targetTransform = null;
     }
 }

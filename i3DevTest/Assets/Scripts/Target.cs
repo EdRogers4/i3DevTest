@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
+    public CameraController scriptCameraController;
     public int colorVariant;
     public float zoomRange;
     public Transform zoomPoint;
@@ -18,15 +19,18 @@ public class Target : MonoBehaviour
 
     private void OnMouseEnter() //Coder Reference: https://www.youtube.com/watch?v=fw7h3UBgNW4
     {
-        if (colorVariant == 2)
+        if (!scriptCameraController.isTargetSelected)
         {
-            meshRenderer.material = materialLights;
-        }
+            if (colorVariant == 2)
+            {
+                meshRenderer.material = materialLights;
+            }
 
-        meshRenderer.material.color = Color.green;
+            meshRenderer.material.color = Color.green;
+        }
     }
 
-    private void OnMouseExit() //Coder Reference: https://www.youtube.com/watch?v=fw7h3UBgNW4
+    public void OnMouseExit() //Coder Reference: https://www.youtube.com/watch?v=fw7h3UBgNW4
     {
         if (colorVariant == 0)
         {
